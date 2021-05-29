@@ -1,1 +1,1 @@
-worker: go run main.go
+worker: ./bin/nova_crawl
