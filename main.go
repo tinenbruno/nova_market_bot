@@ -231,7 +231,7 @@ func GetBestMatch(itemmatch ItemMatch, marketentry MarketEntry) *ItemSellingInfo
 func main() {
 	err := godotenv.Load()
 	if err != nil {
-		log.Fatal("Error loading .env file")
+		log.Println("Error loading .env file")
 	}
 
 	dg, err := discordgo.New("Bot " + os.Getenv("DISCORD_KEY"))
